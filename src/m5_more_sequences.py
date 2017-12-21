@@ -294,6 +294,12 @@ def contains_an_a(s):
     Type hints:
       :type s: str
     """
+    list = []
+    list = list + s.split('str')
+    for k in range(len(list)):
+        if 'a' == list[k]:
+            return True
+    return False
     # ------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #     The testing code is already written for you (above).
